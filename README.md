@@ -70,4 +70,11 @@ NodeHttpEnvironment.make(req, 'https://domain.example.com:8080')
 
 If you're not necessarily within an HTTP environment, you can use the `Environment` base
 type, which at the moment just gives you a reference to the global object (`window` in the
-browser and `global` in Node).
+browser and `global` in Node). If that is all you need, you don't need an HTTP request
+ready. Instead, just use the `NodeEnvironment` class:
+
+```typescript
+import { Environment, NodeEnvironment } from 'tweed-env'
+
+const environment: Environment = NodeEnvironment.make()
+```

@@ -6,4 +6,8 @@ declare global {
 
 export class NodeEnvironment implements Environment {
   readonly global = global
+
+  static make () {
+    return new NodeEnvironment()
+  }
 }
