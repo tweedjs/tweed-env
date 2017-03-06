@@ -7,13 +7,13 @@ export interface Request {
   url: string
 }
 
-export class NodeHttpEnvironment extends NodeEnvironment implements WebEnvironment {
+export class NodeHttpEnvironment implements WebEnvironment {
+  readonly global = global
   readonly userAgent: string | undefined
   readonly cookies: Cookies
   readonly location: Location
 
   constructor (request: Request, origin?: string) {
-    super()
     this.userAgent = request.headers['user-agent']
     this.cookies = parseCookieString(request.headers['cookie'] || '')
     const host: string | undefined = request.headers['host']
