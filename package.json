@@ -1,0 +1,32 @@
+{
+  "name": "tweed-env",
+  "version": "0.4.1",
+  "description": "Runtime Environment Strategies for Tweed",
+  "homepage": "https://github.com/tweedjs/tweed-env",
+  "license": "WTFPL",
+  "keywords": [
+    "tweed",
+    "environment",
+    "universal",
+    "ssr",
+    "polymorphism"
+  ],
+  "bugs": {
+    "url": "https://github.com/tweedjs/tweed/issues"
+  },
+  "repository": "tweedjs/tweed-env",
+  "author": "Emil Persson <emil.n.persson@gmail.com> (https://emilpersson.se)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "tweed-typescript-config": "^0.4.0",
+    "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "tslib": "^1.6.0",
+    "url-parse": "^1.1.8"
+  },
+  "scripts": {
+    "prepublish": "tsc"
+  }
+}
