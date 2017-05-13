@@ -1,6 +1,6 @@
 {
   "name": "tweed-env",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Runtime Environment Strategies for Tweed",
   "homepage": "https://github.com/tweedjs/tweed-env",
   "license": "WTFPL",
@@ -19,7 +19,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "tweed-typescript-config": "^0.4.0",
+    "tweed-typescript-config": "^0.5.0",
     "typescript": "^2.2.1"
   },
   "dependencies": {
